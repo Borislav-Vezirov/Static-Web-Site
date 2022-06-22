@@ -11,6 +11,8 @@ body {
     background-position: 59em 17em;
     background-repeat: no-repeat;
     background-size: 54em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
 }
 
 /*----------------HEADER with HERO Section----------------------------------*/
@@ -38,7 +40,6 @@ header{
 }
 
 .hero .hero__title span{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: 600;
     font-size: 4rem;
     display: block;
@@ -59,14 +60,18 @@ header{
 
 /*----------------Buttons----------------------------------*/
 
-.buttons .buttons__wrapper{
+.buttons .btns{
+    cursor: pointer;
     position: relative;
     background-color: transparent;
     padding: 1.5em;
-    width: 380px;
-    border-top: 50px solid #013b53;
     border-right: 50px solid transparent;
     display: inline-block;
+}
+
+.buttons .buttons__wrapper{
+    width: 380px;
+    border-top: 50px solid #013b53;
     margin: 1em 0 0 9em;
 }
 
@@ -95,12 +100,27 @@ header{
 }
 
 .buttons .buttons__wrapper__second{
-    position: relative;
-    background-color: transparent;
-    padding: 1.5em;
     width: 310px;
     border-top: 50px solid #4eb7ba;
-    border-right: 50px solid transparent;
-    display: inline-block;
     margin: -1.5em 0 0 9em;
 }
+
+.arrow-down{
+    position: relative;
+    left: -17.9em;
+    top: -1.5em;
+    display: inline-block;
+    border-top: 18px solid transparent;
+    border-left: 18px solid #4eb7ba;
+    transform: rotate(-45deg);
+}
+
+.horizontal_dotted_line{
+    position: relative;
+    margin: 25vh auto;
+    width: 98%;
+    border-top: 0.5em dashed #e99d9f;
+}
+
+/*-------------------------FORM-----------------------------------*/
+
