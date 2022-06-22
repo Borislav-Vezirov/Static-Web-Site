@@ -23,7 +23,7 @@ header{
 
 .hero{
     display: flex;
-    margin: 3em 0;
+    margin: 3em 0 5em 0;
     height: 70%;
 }
 
@@ -61,66 +61,103 @@ header{
 /*----------------Buttons----------------------------------*/
 
 .buttons .btns{
-    cursor: pointer;
+    display: flex;
+    align-items: center;
     position: relative;
-    background-color: transparent;
-    padding: 1.5em;
-    border-right: 50px solid transparent;
-    display: inline-block;
+    margin: 0 0 1.5em 7em;
+    clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 0% 100%);
+    padding: 0.6em;
+    height: 40px;
+    cursor: pointer;
 }
 
-.buttons .buttons__wrapper{
-    width: 380px;
-    border-top: 50px solid #013b53;
-    margin: 1em 0 0 9em;
+.buttons .buttons__wrapper__first{
+    width: 19.38em;
+    background-color: #013b53;
 }
 
-.buttons i{
-    position: absolute;
-    top: -35px;
+.buttons .buttons__wrapper__second{
+    width: 16.8em;
+    background-color: #4eb7ba;
+    margin-bottom: 0.5em;
+}
+
+.buttons__wrapper__first i{
     color: #4eb7ba;
-    font-size: 1.5em;
+    font-size: 1.6em;
 }
 
-.buttons i.fa-envelope{
-    position: absolute;
-    top: -35px;
+.buttons__wrapper__second i{
     color: #013b53;
-    background-color: transparent;
+    font-size: 1.6em;
 }
 
 .buttons a{ 
     display: inline-block;
-    position: absolute;
     color: white;
     text-decoration: none;
     text-transform: uppercase;
-    top: -35px;
-    left: 4em;
-}
-
-.buttons .buttons__wrapper__second{
-    width: 310px;
-    border-top: 50px solid #4eb7ba;
-    margin: -1.5em 0 0 9em;
+    margin-left: 0.7em;
 }
 
 .arrow-down{
     position: relative;
-    left: -17.9em;
-    top: -1.5em;
     display: inline-block;
     border-top: 18px solid transparent;
     border-left: 18px solid #4eb7ba;
     transform: rotate(-45deg);
+    margin-left: 7.8em;
 }
 
 .horizontal_dotted_line{
     position: relative;
-    margin: 25vh auto;
+    margin: 10em auto 5em auto;
     width: 98%;
     border-top: 0.5em dashed #e99d9f;
 }
 
+
 /*-------------------------FORM-----------------------------------*/
 
+    display: grid;
+    grid-template-areas: 
+        "first last"
+        "email email"
+        "ageCheck ageCheck"
+        "terms terms";
+    justify-content: space-between;
+}
+
+.form_section form .firstName_wrapper{
+    grid-area: first;
+}
+
+.form_section form .lastName_wrapper{
+    grid-area: last;
+}
+
+.form_section form .email_wrapper{
+    grid-area: email;
+}
+
+/* .form_section form .firstName_wrapper, .lastName_wrapper{
+    width: 95%;
+} */
+
+/* .form_section form .lastName_wrapper{
+   position: relative;
+   right: 0;
+} */
+
+.form_section form .firstName_wrapper label, input{
+    width: 100%;
+}
+
+.form_section form .lastName_wrapper label, input{
+    width: 100%;
+}
+
+
+.form_section form .email_wrapper input{
+    width: 100%;
+}
